@@ -19,7 +19,7 @@ as_default_help = 'Enter text to search.'
 
 
 def _media(self):
-    js = ['admin/js/jquery.init.js']
+    js = []
 
     # Unless AJAX_SELECT_BOOTSTRAP == False
     # then load include bootstrap which will load jquery and jquery ui + default css as needed
