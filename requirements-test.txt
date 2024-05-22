@@ -4,3 +4,7 @@ flake8>=3.7.0
 tox>=2.8.0
 sphinx>=1.6.1
 sphinx_rtd_theme
+pre-commit==3.7.0
+black==24.4.2
+pyupgrade==3.15.2
+pylint==3.1.0
