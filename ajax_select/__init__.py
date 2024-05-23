@@ -9,7 +9,10 @@ __author__ = "crucialfelix"
 __contact__ = "crucialfelix@gmail.com"
 __homepage__ = "https://github.com/Edge-On-Demand/django-ajax-selects/"
 
-from django.apps import AppConfig  # noqa
+try:
+    from django.apps import AppConfig  # noqa
+except ImportError:
+    pass
 
 from ajax_select.registry import registry, register  # noqa
 from ajax_select.helpers import make_ajax_form, make_ajax_field  # noqa
