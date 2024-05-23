@@ -9,14 +9,16 @@ __author__ = "crucialfelix"
 __contact__ = "crucialfelix@gmail.com"
 __homepage__ = "https://github.com/Edge-On-Demand/django-ajax-selects/"
 
+# These won't be avaiable yet when accessed by setup.py.
 try:
     from django.apps import AppConfig  # noqa
+
+    from ajax_select.registry import registry, register  # noqa
+    from ajax_select.helpers import make_ajax_form, make_ajax_field  # noqa
+    from ajax_select.lookup_channel import LookupChannel  # noqa
+
 except (ImportError, ModuleNotFoundError):
     pass
-
-from ajax_select.registry import registry, register  # noqa
-from ajax_select.helpers import make_ajax_form, make_ajax_field  # noqa
-from ajax_select.lookup_channel import LookupChannel  # noqa
 
 # django 1.7+ will use the new AppConfig api
 # It will load all your lookups.py modules
