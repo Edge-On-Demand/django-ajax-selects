@@ -11,7 +11,7 @@ __homepage__ = "https://github.com/Edge-On-Demand/django-ajax-selects/"
 
 try:
     from django.apps import AppConfig  # noqa
-except ImportError:
+except (ImportError, ModuleNotFoundError):
     pass
 
 from ajax_select.registry import registry, register  # noqa
