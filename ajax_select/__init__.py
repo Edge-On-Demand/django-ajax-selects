@@ -1,9 +1,13 @@
 """JQuery-Ajax Autocomplete fields for Django Forms."""
 
-__version__ = "1.7.0"
+# pylint: disable=wrong-import-position
+
+VERSION = (1, 7, 1)
+__version__ = ".".join(map(str, VERSION))
+
 __author__ = "crucialfelix"
 __contact__ = "crucialfelix@gmail.com"
-__homepage__ = "https://github.com/crucialfelix/django-ajax-selects/"
+__homepage__ = "https://github.com/Edge-On-Demand/django-ajax-selects/"
 
 from django.apps import AppConfig  # noqa
 
